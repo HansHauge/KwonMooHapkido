@@ -24,13 +24,20 @@ body{
 
 .navbar-fixed-top{
   height: 50px;
+  a:hover{
+    text-decoration: none;
+  }
   p{
     margin-left: 100px;
+  }
+  p.navbar-text{
+    font-size: 16px;
+    color: white;
   }
   background-color: $kwon-moo-blue;
 }
 
-.navbar-default .navbar-text, .navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-text, .navbar-default .navbar-nav > li > a {
   color: $kwon-moo-silver;
   &:hover {
     color: white !important;
@@ -40,6 +47,7 @@ body{
   }
 }
 
+// hover state and mouseover focus item etc
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   background-color: white;
   color: black;
@@ -48,25 +56,33 @@ body{
   }
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  background-color: #14194E;
-  background-color: #14194E;
-  width: 50%;
-  float: right;
-  p {
-    margin-left: 0px;
+// navbar
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: $kwon-moo-silver;
+  &:hover {
+    color: white !important;
+  }
+  &:visited{
+    color: $kwon-moo-silver;
   }
 }
 
-// h2.title{
-//   margin: 20px 0px 0px 115px;
-//   @media screen and (max-width: $title-small) {
-//     font-size: 12px;
-//   }
-//   @media only screen and (min-width: $title-small + 1) and (max-width: $title-large - 1){
-//     font-size: 18px;
-//   }
-//   @media screen and (min-width: $title-large) {
-//     font-size: 30px;
-//   }
-// }
+// mobile navbar
+.navbar-default .navbar-collapse {
+  @media screen and (max-width: $small) {
+    background-color: $kwon-moo-blue;
+    width: 50%;
+    float: right;
+    p {
+      margin-left: 0px;
+    }
+  }
+}
+
+// navbar selected
+ul.dropdown-menu, .dropdown-menu > li > a{
+  background-color: $kwon-moo-blue;
+  &:hover{
+    background-color: $kwon-moo-blue !important;
+  }
+}
