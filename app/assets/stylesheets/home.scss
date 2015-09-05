@@ -1,22 +1,72 @@
+// Responsive sizes
+$small: 768px;
+$large: 1200px;
+
+// Default colors
+$kwon-moo-blue: #14194E;
+$kwon-moo-silver: #ACABA9;
+
+body{
+  background-color: #E2E2E2;
+}
+
 #main-content-wrapper{
-  margin: 125px 10px;
+  margin: 80px 10px;
 }
 
 .navbar-brand{
-  padding: 0px;
-  margin: 0px 15px;
-  height: auto;
   position: absolute;
+  padding: 0px;
+  height: 74px;
   border: 1px solid black;
-  border-top: none;
+  left: 50px;
 }
 
 .navbar-fixed-top{
-  height: 75px;
-  background-color: #14194E;
-  color: white;
+  height: 50px;
+  p{
+    margin-left: 100px;
+  }
+  background-color: $kwon-moo-blue;
 }
 
-h2.title{
-  margin: 20px 0px 0px 115px;
+.navbar-default .navbar-text, .navbar-default .navbar-nav > li > a{
+  color: $kwon-moo-silver;
+  &:hover {
+    color: white !important;
+  }
+  &:visited{
+    color: $kwon-moo-silver;
+  }
 }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color: white;
+  color: black;
+  &:hover {
+    color: black !important;
+  }
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: #14194E;
+  background-color: #14194E;
+  width: 50%;
+  float: right;
+  p {
+    margin-left: 0px;
+  }
+}
+
+// h2.title{
+//   margin: 20px 0px 0px 115px;
+//   @media screen and (max-width: $title-small) {
+//     font-size: 12px;
+//   }
+//   @media only screen and (min-width: $title-small + 1) and (max-width: $title-large - 1){
+//     font-size: 18px;
+//   }
+//   @media screen and (min-width: $title-large) {
+//     font-size: 30px;
+//   }
+// }
