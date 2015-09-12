@@ -1,56 +1,25 @@
 <h1>More Power!</h1>
 <h2>100% Hapkido - Not a sport or a mixed martial art</h2>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag 'korea-hapkido-trip.jpg' %>
-      <div class="carousel-caption">
-        <h3>Korea</h3>
-        <p>We went to Korea and shit!</p>
-      </div>
+<%= render 'slideshow' %>
+
+<div class='container'>
+  <div class='row padded-children'>
+    <div class="col-md-6">
+      <p>
+        <%= image_tag 'http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg', class: "img-responsive" %>
+      </p>
     </div>
-
-    <div class="item">
-      <%= image_tag 'korea-hapkido-trip-2.jpg' %>
-      <div class="carousel-caption">
-        <h3>Buddah</h3>
-        <p>Grandmaster looks like he's been smoking it!</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag 'hapkido-dojo-1.jpg' %>
-      <div class="carousel-caption">
-        <h3>Dojo</h3>
-        <p>Everybody was Kwon Moo Fighting!</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag 'hapkido-belt-testing-1.jpg' %>
-      <div class="carousel-caption">
-        <h3>Belt Testing</h3>
-        <p>Zach (and Trevor) with a yellow belt!</p>
-      </div>
+    <div class="col-md-6">
+      <p>
+        Hapkido is not nice, It is not a sport, or a tournament based martial art that is based on a point system to declare a winner or loser, it is a practical and effective form of self defense. Hapkido attempts to be a complete fighting style, rather than a specialized art form and can be learned by both men and women of all ages.
+        <br><br>
+        Kwon Moo Hapkido developed by Grand Master Chae Un Kim that has dedicated over 50 years of experience to Martial arts. Over his lifetime he has pressed himself in the refinement and development of the most effective and simple techniques to end a fight from within Hapkido. Which gave birth to his Kwon Moo stile of Hapkido that has truly developed a signature technique of full body power that sets itself apart from even traditional Hapkido.
+        <br><br>
+        What you will learn from the Kwon Moo Hapkido Federation, is a very solid and effective foundation in any rang of physical conflict you may face. Where most forms of martial arts that promote “Self Defense” only focus on one specific range of fighting such as kicking or punching but the federation realizes that this is not a practical form of self defense. To be a true school of self defense you must be prepared to counter and respond to many ranges of attack you may face in the real world from weapons, kicks, punches, grabs, chokes, throws and even being taken to the ground.
+        <br><br>
+        Characteristics of Kwon Moo Hapkido that jump out to someone new to the form and predominantly sets itself apart from other well known forms of martial arts. Counter offensive, as in we do not initiate a fight or make first contact, we let our attacker make that mistake and then finish the fight. Other characteristics include: The focus of basic knock out power punches, lead leg kicks, pressure points, Joint locks (joint brakes, A.K.A. “Twisting”) and take downs. Our motto is “ONE MOVE OUT!” as in lights out!
+      </p>
     </div>
   </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>

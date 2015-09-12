@@ -86,3 +86,23 @@ ul.dropdown-menu, .dropdown-menu > li > a{
     background-color: $kwon-moo-blue !important;
   }
 }
+
+// footer
+footer{
+  background-color: $kwon-moo-blue;
+  h2{
+    color: white;
+  }
+  .table > tbody > tr > td {
+    border-top: 1px solid white;
+    color: $kwon-moo-silver;
+  }
+  .table > thead > tr > th {
+    border-bottom: 2px solid white;
+    color: $kwon-moo-silver;
+  }
+}
+
+.padded-children > .col-md-6 > p{
+  padding: 20px;
+}
