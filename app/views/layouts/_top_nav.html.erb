@@ -8,20 +8,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to '#' do %>
+      <%= link_to root_path do %>
         <%= image_tag 'kwon-moo-hapkido-logo-thumbnail-medium.jpg', class: 'navbar-brand' %>
       <% end %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <%= link_to '#' do %>
+      <%= link_to root_path do %>
         <p class="navbar-text">Kwon Moo Hapkido Federation</p>
       <% end %>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">News / Events</a></li>
+        <li>
+          <%= link_to 'Locations', locations_path %>
+        </li>
+        <li>
+          <%= link_to 'News/Events', 'https://www.facebook.com/HapkidoSelfDefense', target: '_blank' %>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             About <span class="caret"></span>
