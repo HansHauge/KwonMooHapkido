@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def locations
   end
+
+  def about
+  end
 end

@@ -31,21 +31,9 @@
             About <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Hapkido</a></li>
-            <li><a href="#">Kwon Moo Hapkido Federation</a></li>
-            <li><a href="#">Grandmaster</a></li>
-            <li><a href="#">Instructors</a></li>
-            <li><a href="#">Training Schedule</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            Classes <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Adults</a></li>
-            <li><a href="#">Private Lessons</a></li>
+            <li><%= link_to 'Hapkido', about_path(anchor: 'about-hapkido') %></li>
+            <li><%= link_to 'Kwon Moo Hapkido Federation', about_path(anchor: 'about-kwon-moo-hapkido-federation') %></li>
+            <li><%= link_to 'Grandmaster', about_path(anchor: 'about-grandmaster-kim') %></li>
           </ul>
         </li>
       </ul>
